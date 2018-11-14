@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000"
+    tools:context=".PlayerActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Songs Name Here. Please Maintain some Gap for Text"
+        android:textColor="#FFF"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:id="@+id/songName"
+        android:shadowColor="@color/text_shadow_white"
+        android:shadowDx="0"
+        android:shadowDy="5"
+        android:shadowRadius="10"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Song Album"
+        android:textColor="#FFF"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:padding="5dp"
+        android:id="@+id/songAlbum"
+        android:shadowColor="@color/text_shadow_white"
+        android:shadowDx="0"
+        android:shadowDy="7"
+        android:shadowRadius="10"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:text="0:00"
+            android:textSize="15dp"
+            android:id="@+id/current_time"
+            />
+
+        <SeekBar
+            android:id="@+id/mSeekBar"
+            android:layout_width="288dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:elevation="20dp" />
+
+        <TextView
+            android:id="@+id/total_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="3:00"
+            android:textColor="#FFF"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="20dp"
+        >
+
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center"
+            android:background="@drawable/play_pause_button"
+            android:src="@drawable/btn_previous"
+            android:id="@+id/btn_previous"
+            android:clickable="true"
+            android:padding="25dp"
+            />
+
+        <ImageView
+            android:id="@+id/play_pause"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/play_pause_button"
+            android:clickable="true"
+            android:padding="25dp"
+            android:src="@drawable/btn_pause" />
+
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center"
+            android:background="@drawable/play_pause_button"
+            android:src="@drawable/btn_next"
+            android:id="@+id/btn_next"
+            android:clickable="true"
+            android:padding="25dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
